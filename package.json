@@ -1,0 +1,23 @@
+{
+    "name": "String-Manipulator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "function.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/vivekthangam/String-Manipulator.git"
+    },
+    "keywords": [],
+    "author": "Vivek Thangam",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/vivekthangam/String-Manipulator/issues"
+    },
+    "homepage": "https://github.com/vivekthangam/String-Manipulator#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    }
+}
