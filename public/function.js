@@ -59,6 +59,7 @@ function convertTo(e) {
 
     // Show Results
     document.getElementById("result").style.display = "block";
+    document.getElementsByClassName(e).style.display = "block";
 
     // Hide Loader
     document.getElementById("loading").style.display = "none";

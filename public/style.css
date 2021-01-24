@@ -21,8 +21,11 @@ body {
     display: none;
 }
 
-#result {
-    display: block;
+.lowercase,
+.uppercase,
+.camelcase,
+.normal {
+    display: none;
 }
 
 @media (max-width: 750px) {
