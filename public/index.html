@@ -1,17 +1,202 @@
-<!DOCTYPE html><html lang="en"><head>
-  <meta charset="utf-8">
-  <title>WebTools</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- CSS only -->
-  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
+<!DOCTYPE html>
+<html lang="en">
 
-<style>*{padding:0;margin:0}body{font-family:sans-serif}</style><link rel="stylesheet" href="styles.53ec6b68e14960b4.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.53ec6b68e14960b4.css"></noscript></head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard using HTML, CSS and JS</title>
+    <!--<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+    rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
 <body>
-  <app-root></app-root>
-<script src="runtime.cafc836e029ff3a7.js" type="module"></script><script src="polyfills.91570917ca0153f1.js" type="module"></script><script src="main.d1c4ee2edd458755.js" type="module"></script>
+    <div class="container">
+        <!-- START OF SIDEBAR -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="sss">
+                    <h2>EGA<span class="danger">TOR</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons">
+                        close
+                    </span>
+                </div>
+            </div>
+            <div class="sidebar">
+                <a class="active" href="#">
+                    <span class="material-icons"> grid_view </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons"> person_outline </span>
+                    <h3>Customers</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons"> receipt_long </span>
+                    <h3>Orders</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons"> insights </span>
+                    <h3>Analystics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons"> mail_outline </span>
+                    <h3>Messages</h3>
+                    <span class="message-count">26</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons"> inventory </span>
+                    <h3>Products</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons"> report_gmailerrorred </span>
+                    <h3>Repotrts</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons"> settings </span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons"> add </span>
+                    <h3>Add Product</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons"> logout </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
 
+        <!-- END OF SIDEBAR -->
+        <!-- START OF MAIN -->
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+                <input type="date" name="" id="">
+            </div>
 
-</body></html>
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons"> analytics </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$25,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+
+                <div class="expenses">
+                    <span class="material-icons"> bar_chart </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>$25,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+
+                <div class="income">
+                    <span class="material-icons"> stacked_line_chart </span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Incomes</h3>
+                            <h1>$25,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 hours</small>
+                </div>
+            </div>
+
+            <div class="recent-orders">
+                <h2>Recent Oders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                        <th>Product Name</th>
+                        <th>Product Number</th>                        
+                        <th>Payments</th>
+                        <th>Status</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                        </tr>
+
+                        <tr>
+                            <td>Foldable Mini Drone</td>
+                            <td>85631</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                        <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <h1>dd</h1>
+    </div>
+</body>
+
+</html>
