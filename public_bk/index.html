@@ -1,0 +1,89 @@
+<!-- Code By Webdevtrick ( https://webdevtrick.com )-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Loan Calculator | Webdevtrick.com</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto calculate-form">
+                <div class="card card-body text-center mt-5">
+                    <h1 class="heading display-5 pb-3">String Calculator</h1>
+                    <form id="loan-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">String</span>
+                                </div>
+                                <input type="text" class="form-control" id="str" placeholder="Enter String" />
+                            </div>
+                        </div>
+                        <div class="form-group"></div>
+                        <button type="submit" id="LowerCase" class="btn btn-dark">Lowercase</button>
+                        <button type="submit" id="UpperCase" class="btn btn-dark">UpperCase</button>
+                        <button type="submit" id="CamelCase" class="btn btn-dark">CamelCase</button>
+                        <button type="submit" id="Normal" class="btn btn-dark">camelCase To Normal</button>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Calculate" class="btn btn-dark btn-block" />
+                </div>
+                </form>
+                <!-- Loader -->
+                <div id="loading">
+                    <img src="https://media.giphy.com/media/swhRkVYLJDrCE/giphy.gif" alt="loading" />
+                </div>
+                <!-- Result -->
+                <div id="result">
+                    <h5>Results</h5>
+                    <div class="form-group" class="lowercase">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">LowerCase</span>
+                            </div>
+                            <input type="text" class="form-control" id="lowercase" disabled />
+                        </div>
+                    </div>
+                    <div class="form-group" class="uppercase">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">UpperCase</span>
+                            </div>
+                            <input type="text" class="form-control" id="uppercase" disabled />
+                        </div>
+                    </div>
+                    <div class="form-group" class="camelcase">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">CamelCase</span>
+                            </div>
+                            <input type="text" display="none" class="form-control" id="camelcase" disabled />
+                        </div>
+                    </div>
+                    <div class="form-group" class="normal">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Normal String</span>
+                            </div>
+                            <input type="text" class="form-control" id="normal" disabled />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="function.js"></script>
+
+</body>
+
+</html>
